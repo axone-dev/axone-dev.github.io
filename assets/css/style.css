@@ -1697,3 +1697,18 @@ header{
 .comment-area input:hover{
     border: solid 1px #000000;
 }
+
+.navigate1{
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.navigate1 a{
+    color: #000000;
+}
+
+.navigate1 a:hover{
+    color:#FF0042;
+    font-weight: bolder;
+}
