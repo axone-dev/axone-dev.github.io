@@ -1009,7 +1009,7 @@ h1{
     margin-block: 0;
 }
 
-.center{
+.bicenter{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1518,4 +1518,18 @@ h1{
 
 .comment-area2 input:hover{
     border: solid 1px #000000;
+}
+
+.caca{
+    display: block;
+    margin: 0 auto;
+}
+video {
+  display: block;
+  margin: auto;
+}
+
+.lol-container{
+    display: block;
+    margin: 0 auto;
 }
