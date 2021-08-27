@@ -1,69 +1,133 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
+		<title>Axone</title>
+<link type="text/css" rel="stylesheet" href="core/html/css/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="core/html/css/global8e0e.css?v=8"/>
+<link type="text/css" rel="stylesheet" href="core/html/css/font-awesome.min.css"/>
+<link rel="icon" href="favicon.png">
+<script src="core/html/js/jquery-3.1.0.min.js"></script>
+<script src="core/html/js/gibberish-aes-1.0.0.min.js"></script>
+<script src="core/html/js/bootstrap.min.js"></script>
+<script data-ad-client="ca-pub-3667210370239911" async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<meta name="csrf-token" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="desc">
+<meta name="keywords" content="">
+<meta name="author" content="AxoneDev">
 
-	<style type="text/css">
-	<!--
+<link type="text/css" rel="stylesheet" href="core/html/css/style4cc8.css?v=28"/>		<script src="core/html/js/particles.min.js"></script>
+		<script>
+			particlesJS.load('particles-js', 'core/html/js/particles.json', function() {
+			  console.log('particles.js loaded - callback');
+			});
+		</script>
+		<style>
+			#particles-js{
+			  width: 100%;
+			  height: 100%;
+			  background-image: url('');
+			  background-size: cover;
+			  background-position: 50% 50%;
+			  background-repeat: no-repeat;
+			}
+			canvas {
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: -999
+			}
+		</style>
+	</head>
+	<body>
+		<script src="core/func/js/html/navigationd480.js?v=1010"></script>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar" style="box-shadow:0 1px 2px 0 rgba(34,36,38,.15);">
+	<div class="container">
+		<div class="navbar-header">
+												<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+						<a style="margin: 2px 0px 0px;" class="navbar-brand" href="index.html"><img width="50" height="50" src="core/html/img/logo.png"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+				<li><a href="forum.html">In dev</a></li>
+				<li><a href="games.html">In dev</a></li>
+				<li><a href="catalog.html">In dev</a></li>
+				<li style="margin:3px 0px 0px;" class="dropdown">
+					<a style="margin: -2px 0px 0px;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu" style="margin-top:3px;">
+												<li><a href="users.html">In dev</a></li>
+						<li><a href="https://discord.gg/q666a2sF6d">Discord</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="navbar-form navbar-left" role="search">
+				<div class="form-group" id="navSearch">
+					<input type="text" id="searchValue" class="form-control" style="display:none" placeholder="Search" autocomplete="off"></input>
+				</div>
+				<a id="switchSearch" style="display:none"><span class="caret"></span></a>
+				<button type="submit" id="searchUser" class="btn btn-default" style="display:none">Search</button>
+			</div>
+						<ul class="nav navbar-nav navbar-right">
+				<script src="core/func/js/auth/login30f4.js?v=3"></script>
+		</div>
+	</div>
+		<ul class="navbar-side navbarSide">
+					</ul>
+		<div class="overlay"></div>
+</nav>
+<div style="margin-bottom:54px"></div><div class="alert alert-warning center"><b style="color:white!important">Note</b> - Our Website is in dev. (<a class="alert-link" href="https://discord.gg/txBAa9PBb2/">Join our Discord!</a>)</div>
+<div class="modal globalModal" tabindex="-1" role="dialog" aria-labelledby="modalglobal" aria-hidden="true">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content center gModalContent">
+			<h4 class="modal-title" id="modalUsername"></h4>
+			<div class="modal-body" id="miniProfileContent">
+				<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+			</div>
+		</div>
+	</div>
+</div>
 
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
-}
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+<div class="modal fade" id="globalModal2" tabindex="-1" role="dialog" aria-labelledby="globalModal" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header" id="gModalHeader">
+				<h5 class="modal-title" id="gModalTitle">Modal</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="gModalErrorContainer"></div>
+			<div class="modal-body" id="gModalBody">
+			</div>
+		</div>
+	</div>
+</div>
+
+		<script src="../www.google.com/recaptcha/api.js"></script>
+		<div class="container">
+			<div id="particles-js">
+				<div class="col-xs-12 col-sm-12 col-md-7">
+					<h3 class="wtext">Welcome to Axone</h3>
+					<p class="wtext">presentation text</p>
+					<p class="wtext">presentation text</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-5">
+				</div>
+			</div>
+		</div>
+		<style>
+	@media only screen and (max-width: 500px) {
+		.footer {
+			height:95px
+		}
 	}
-
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
-
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
-
-#siteNavigation .current { background-color: #ccd; }
-
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
-
-
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
-
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
-
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
-
-
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #fff; }
-.tblNoBorder td   { border: 0; }
+</style>
+<div style="margin-bottom:150px"></div>
+<footer class="footer container center" style="box-shadow:0 1px 50px 0 rgba(34,36,38,.15);">	<h5 style="color:grey;font-size:22px;margin-bottom:0px">Axone</h5>
+	<p style="margin-bottom:0px">legals things here</p>
+	<a href="">yes</a> | <a href="">no</a> | <a onclick="">yes</a> | thingcool here | another cool thing here</footer>	</body>
+</html>
