@@ -245,13 +245,17 @@ h1{
 /*           Forums.html                       */
 /* ########################################### */
 
+.img-fluid{
+    width: 50px;
+    height: 50px;
+}
 
 .subforum{
     margin-top:20px;
 }
 
 .subforum-title{
-    background-color:#292B2E;
+    background-color:#2596be;
     padding: 5px;
     border-radius: 5px;
     margin:4px;
@@ -266,14 +270,14 @@ h1{
     padding: 10px;
     margin:4px;
     border-radius: 5px;
-    background-color:#111314;
+    background-color:rgb(0,0,0,0.1);
 }
 
 .subforum-description *{
     margin-block: 0;
 }
 
-.center{
+.bicenter{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,7 +287,9 @@ h1{
     font-size: 45px;
 }
 
-
+.subforum-devider{
+    display: none;   
+}
 
 
 /* For the smartphones */
@@ -338,13 +344,135 @@ h1{
 /*   Header Section    */
 
 
-
-
-
- 
-
+  /* Nav Bar styles */
+.navbar{
+    display:flex;
+    align-items: center;
+}
+.navigation{
+    background-color:#52057b;
+    padding: 10px;
+    width: 65%;
+    display: inline-block;
+    border-radius: 5px;
+    max-height: 80px;
+    margin-right:10px;
 }
 
+.close-icon i{
+    font-size:60px;
+    float: left;
+    cursor: pointer;
+}
+
+.nav-list{
+    list-style-type:none;
+    overflow: hidden;
+}
+
+.nav-item a{
+    float: right;
+    display:block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color:#fff;
+}
+
+.nav-item a:hover{
+    background-color: rgb(0,0,0,0.1);
+}
+
+.hide{
+    display: none;
+}
+
+.bar-icon{
+    font-size: 60px;
+    display: inline-block;
+    margin-right:10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family:aquire;
+    src:url(aquire.otf);
+}
+
+.brand{
+    font-size:60px;
+    display: inline-block;
+    font-family:aquire;
+}
+
+/*Navbar for the smartphones*/
+@media screen and (max-width: 460px){
+    .navigation{
+        max-height: auto;
+    }
+    
+    .close-icon i{
+        font-size:30px;
+    }
+    
+    .nav-item a{
+        float:left;
+        display:inline;
+        margin-inline: 3px;
+        font-size: 10px;
+        padding: 5px;
+    }
+    
+    
+    .bar-icon{
+        font-size: 30px;
+    }
+ 
+    .brand{
+        font-size:20px;
+    }
+}
+
+  /* Search Box styles */
+.search-box{
+    border: solid 1px #52057b;
+    margin-top: 20px;
+    padding: 40px;
+    display:flex;
+    justify-content: center;
+    box-shadow:1px 2px 3px #52057b;
+}
+
+.search-box select{
+    padding: 10px;
+}
+
+.search-box input{
+    padding: 10px;
+}
+
+.search-box button{
+    padding: 10px;
+    background-color:#fff;
+    color:#000000;
+}
+
+.search-box button:hover{
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+}
+
+/* search box for smrtphones */
+@media screen and (max-width: 460px){
+    .search-box input, .search-box button, .search-box select{
+        min-width: 300px;
+        margin-top: 5px;
+    }    
+
+}
 
 /* ########################################### */
 /*            posts.html                       */
@@ -358,7 +486,7 @@ h1{
 .table-head div{
     padding: 5px;
     margin: 2px;
-    background-color: #2C2C2C;
+    background-color: #2596be;
     font-weight: bold;
 }
 
@@ -387,7 +515,7 @@ h1{
 .table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
     padding: 5px;
     margin: 2px;
-    background-color: #131415;
+    background-color: rgb(0,0,0,0.1);
 }
 
 .table-row .status{
@@ -416,7 +544,7 @@ h1{
 }
 
 .navigate a{
-    color: #fff;
+    color: #000000;
 }
 
 .navigate a:hover{
@@ -432,7 +560,7 @@ h1{
 }
 
 .pagination a{
-    color: #fff;
+    color: #000000;
     margin-inline: 5px;
     padding: 5px 10px;
     border: solid 0.5px #fff;
@@ -453,14 +581,13 @@ h1{
     margin-block: 5px;
 }
 
-
 /* ########################################### */
 /*            detail.html                      */
 /* ########################################### */
 
 .head{
     display: flex;
-    background-color: #2C2C2C;
+    background-color: #2596be;
     padding: 5px;
     font-weight: bold;
     font-size: 15px;
@@ -476,7 +603,7 @@ h1{
 
 .body{
     display: flex;
-    background-color: #131415;
+    background-color: rgb(0,0,0,0.1);
     padding: 10px;
     margin-top: 5px;
 }
@@ -486,8 +613,8 @@ h1{
 }
 
 .body .authors img{
-    max-width: 50px;
-    max-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .body .content .comment button{
@@ -522,7 +649,10 @@ h1{
     border: solid 1px #000000;
 }
 
-
+.img-forum{
+    width: 400px;
+    height: 130px;
+}
 
 
 
