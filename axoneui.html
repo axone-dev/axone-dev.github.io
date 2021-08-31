@@ -110,34 +110,71 @@
 	</div>
 </div>
 
-<div class="container">
-                <div class="col-xs-12 col-sm-4 col-md-8 col-sm-offset-2 col-md-offset-2">
-                <script>var cType = "coins";</script>               <!-- Horizontal ad spot -->
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-3667210370239911"
-                     data-ad-slot="4289582614"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
+	<script src="/core/func/js/chat.js?tick=1099"></script>
+	<div id="desktopChat" class="desktopView">
+		<div class="chatOpener">Chat</div>
+		<div class="chatOptions"></div>
+		<div class="chatOpenbackground">
+			<button class="btn btn-success addChatBtn fullWidth" style="border-radius: 0px" onclick="renderChatChoices();">Add Chat</button>
+			<div class="chatContainer"></div>
+		</div>
+	</div>
+		<div class="container">
+			<script>var userId="1377";</script>			<div class="col-xs-12 col-sm-12 col-md-3">
+				<script src="/core/func/js/profile.js?v=5"></script>
+				<div id="pStatus"></div>
+				<div class="well profileCard center">
+					<p style="margin:0 0 2px"><font color="green">&#x25CF; </font> Wizardox</p>
+										<img class="img-responsive" style="display:inline;" src="https://www.gtoria.net/avatar/Wizardox?time=1630285291">
+										<p>
+					<span style="word-wrap:break-word;">GT-2pI70ErqFl2vyLOu</span>					</p>
+				</div>
+				<div class="well profileCard">
+					<h4 style="margin:0 0 2px">Statistics</h4>
+					<p style="margin:0px 0 5px;display:inline;"><b>Join Date</b>: <div style="float:right;display:inline;">5/19/2021</div></p>
+					<p style="margin:0px 0 5px;display:inline;"><b>Last Seen</b>: <div style="float:right;display:inline;">
+					8/31/2021										
+					</div></p>
+					<p style="margin:0px 0 5px;display:inline;"><b>Forum Posts</b>: <div style="float:right;display:inline;">0</div></p>
+					<p style="margin:0px 0 5px;display:inline;"><b>Profile views</b>: <div style="float:right;display:inline;">1</div></p>
+				</div>
+				<div class="well profileCard">
+					<h4 style="margin:0 0 2px">Groups</h4>
+					<div class="Center">This user is not in any group.</div>				</div>
+							</div>
+			<div class="col-xs-12 col-sm-12 col-md-7">
+								<div class="well profileCard">
+					<h4 style="margin-top:4px" id="friendCount">Projects</h4>
+						<div class="row"><script>$("#friendCount").html("Projects");</script><div class="col-xs-12 col-sm-12 col-md-3 center"><span><a href=""><img width="120" src="core/html/img/notload.png"><br>
+							<!-- <font color="grey">&#x25CF; </font> -->
+							<b>Escape Coffin Dance</b></a></span><br><br></div></div>				</div>
+				<div class="well profileCard">
+					<h4 style="margin-top:4px">Roles</h4>
 
-                <div id="iStatus"></div>
-                <div class="well profileCard" style="margin-top:5px">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <h4>Axone Main UI</h4>
-                            <img class="img-responsive" src="https://cdn.discordapp.com/attachments/827657208828264478/860069652516306944/unknown.png">
-                        </div>
-                        <div class="col-xs-6">
-                            <h4>Details</h4>
-                                                        <a href="/user/profile/Graphictoria"><img height="150" width="150" src="core/html/img/YLM.jpg"></a>
-                            <p><b>Creator: </b><a href="">Axone Technologies - Your Local Musk</a></p><p><b>Price: </b>FREE</p><p><b>Obfuscated: </b>No</p>                          <p><b>Date Created: </b>Aug 29 2021 10:56 PM</p>
-                            <a class="btn btn-primary fullWidth" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Download .sln</a>                        </div>
-                    </div>
-                                        <b>Description</b><br>
-                    This was the original and main UI for Axone. This project is now abandoned and the UI is now open source.                </div>
-            </div>
-        </div>
-
+					<div class="row"><div data-toggle="tooltip" data-placement="top" data-original-title="This badge is owned by every single user of Graphictoria and proves that you have played Graphictoria." class="col-xs-12 col-sm-12 col-md-3 center"><img width="100" src="https://gtoria.net/html/img/badges/5.png?v=5"><br><b>Member</b><br><br></div></div>				</div>
+								<div class="well profileCard">
+									
+					<h4 style="margin-top:4px">Inventory</h4>
+					<div class="btn-group btn-group-justified">
+						<a class="btn" id="showHats">Hats</a>
+						<a class="btn" id="showHeads">Heads</a>
+						<a class="btn" id="showFaces">Faces</a>
+						<a class="btn" id="showTshirts">T-Shirts</a>
+						<a class="btn" id="showShirts">Shirts</a>
+						<a class="btn" id="showPants">Pants</a>
+						<a class="btn" id="showGear">Gear</a>
+					</div>
+					<div id="inventoryItems" class="row center">
+					</div>
+				</div>
+							</div>
+			<div class="col-xs-12 col-sm-12 col-md-2">
+				<ins class="adsbygoogle"
+					 style="display:block"
+					 data-ad-client="ca-pub-3667210370239911"
+					 data-ad-slot="3743605946"
+					 data-ad-format="auto"
+					 data-full-width-responsive="true"></ins>
 
 
 
@@ -149,8 +186,3 @@
 		}
 	}
 </style>
-<div style="margin-bottom:150px"></div>
-<footer class="footer container center" style="box-shadow:0 1px 50px 0 rgba(34,36,38,.15);">	<h5 style="color:grey;font-size:22px;margin-bottom:0px">Axone</h5>
-	<p style="margin-bottom:0px">legals things here</p>
-	<a href="">yes</a> | <a href="">no</a> | <a onclick="">yes</a> | thingcool here | another cool thing here</footer>	</body>
-</html>
