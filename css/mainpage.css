@@ -158,7 +158,7 @@ a:hover {
     transition: all .3s;
     margin-left:70px;
     content: '';
-    color: rgb(206, 206, 206);
+    color: rgb(0,0,0);
     font-size: 14px;
     font-family: 'Metropolis-Bold';
 }
@@ -174,7 +174,7 @@ a:hover {
 
 
 .mainheader {
-    background: #0d0414 url('KX0f3tMOOuvhTu1AAAAAElFTkSuQmCC.webp'); 
+    background: #0d0414 url('ok1.jpg'); 
     padding-top: 24px;
     background-size: cover;
     height: 700px;
@@ -235,7 +235,7 @@ a:hover {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    color:white;
+    color:black;
 }
 
 .submaincontainer {
