@@ -243,3 +243,34 @@
       font-size: 25px;
     }
 }
+
+.feedback{
+  color: #000;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.form-control {
+  border-radius: 0px;
+  margin-bottom: 2px;
+  color: #eeeeee;
+    background-color: #101010;
+  border-color: #333333
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  opacity: 1;
+  background-color: #000000;
+}
+
+.buttonfeedback{
+    width: 9%;
+    display: block;
+    margin-left: all;
+    margin-right: auto;
+    margin-top: 0%;
+    transition: width 0.5s, transform 0.5s;
+}
+.buttonfeedback:hover {
+   width: 10%;
+}
