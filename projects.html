@@ -315,6 +315,86 @@
 						<h4>Description</h4>
 						<p>This game was inspired by the original prison life. PL3 did not stole ANY SCRIPTS from the game.
 					<br />Be an inmate, escape, rob banks, kill the guards and save the other inmates ! Or be a guard and protect the prison from the criminals !</p>
+											<p>
+					<br /></p>
+											<p>
+					<br /></p>
+											<p>
+					<br />                                                               </p>
+																<p>
+					<br />                                                               </p>
+
+
+
+						<input type="text" class="form-control" id="input" placeholder="send suggestion, feedback to the game!" name="input" />
+
+					<button onclick="sendMessage1()" class="btn btn-primary cooldown" id="rSubmit">submit</button>
+					<p></p>
+
+  <script>
+    function sendMessage1() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/902850238933508166/5HwsFimbf5XhdHv4H9pkkTsw4VY4Duh8vHbV8wG8gaFZJ7nSvmlLZ3yHLvkBiHPNSwq3");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+  "username": "Prison Life 3 Feedback",
+  "avatar_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png",
+  "content": "",
+  "embeds": [
+    {
+      "title": "Content :",
+      "color": 2463422,
+      "description": document.querySelector("input").value,
+      "timestamp": "",
+      "author": {
+        "name": "New feedback !",
+        "url": "https://media.discordapp.net/attachments/902315571025158225/902540921957146634/logofeedback.png",
+        "icon_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png"
+      },
+      "image": {
+        "url": ""
+      },
+      "thumbnail": {
+        "url": "https://media.discordapp.net/attachments/902850205341323294/902850773292023808/PL3.jpg"
+      },
+      "footer": {
+        "text": "From axonedev.xyz/projects"
+      },
+      "fields": []
+    }
+  ],
+  "components": [
+    {
+      "type": 1,
+      "components": [
+        {
+          "type": 2,
+          "style": 5,
+          "label": "Website",
+          "url": "http://axonedev.xyz"
+        }
+      ]
+    }
+  ]
+}
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
+
+  <script>
+  	$('button.cooldown').click(function(){
+  var btn = $(this);
+  btn.prop('disabled', true);
+  setTimeout(function(){
+    btn.prop('disabled', false);
+  },60000);
+});
+  </script>
+
+
 			</div>
 		</div>
 	</div>
@@ -333,6 +413,7 @@
 						<h4>Description</h4>
 						<p>Our project is still confidential hehe.
 					<br />But we can tell you that we're making a new exploit (new UI, brand new dll etc), Axone-V2.</p>
+
 			</div>
 		</div>
 	</div>
