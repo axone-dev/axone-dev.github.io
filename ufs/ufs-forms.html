@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>United French Schools</title>
+   <link rel="stylesheet" href="UFSstyle.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+  </head>
+  <link rel="icon" href="https://media.discordapp.net/attachments/886387883752161310/891402885198409748/ufs.png" type="image/icon type">
+
+  <body>
+    <section class="header">
+     <!--code de la navbar https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav-->
+     <div class="topnav" id="myTopnav">
+       <a href="ufs.html" class="active">Home</a>
+       <a href="http://axonedev.xyz/ufs-rules">Règlement</a>
+       <a href="http://axonedev.xyz/ufs-faq">FAQ</a>
+       <a href="ufs-forms.html">Formulaires</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+       </a>
+       <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+      </div>
+
+      <img class="UFSbanner" src="core/html/img/UFSbanner.png" alt="Bannière United French Schools" />
+      <a href="https://discord.gg/YAKht4vYNK"><img class="buttonrejoindre" src="core/html/img/buttonrejoindre.svg"></a>
+    </section>
+    <section class=contents>
+
+      <h1 class=title>Présentation</h1>
+      <p class=text>United French Schools ( UFS ) est un serveur Discord ayant pour but de réunir des élèves de différentes écoles de France pour s'entraider et s'amuser ensemble.</p>
+      <div class="flex-container">
+        <div class="flex-item-left">
+         <h3 class="features" id="contour">Le Staff</h3>
+         <p class="featuresdesc" id="contour">Notre serveur détient des administrateurs et modérateurs compétents, prêt à vous aider, vous écouter et toujours actif.</p>
+        </div>
+
+        <div class="flex-item-middle">
+          <h3 class="features">Des évenements réguliers</h3>
+         <p class=featuresdesc>Pour maintenir le serveur actif, nous nous efforçons d'organiser des évènements variés et réguliés.</p>
+
+ 
+
+
+        </div>
+
+        <div class="flex-item-right">
+         <h3 class="features">Une sécurité optimale</h3>
+         <p class="featuresdesc">Nous avons optés pour un serveur sécurisé : un bot anti raid et une vérification. Afin d'éviter tout imposteur, il faudra vérifier son établissement auprès des admins pour accéder à certains salons.</p>
+        </div>
+      </div>
+
+              <div class="flex-item-left">
+         <h3 class="features" id="contour">Feedback</h3>
+         <p class="featuresdesc" id="contour">Votre avis compte, c'est pourquoi nous vous invitons à exprimer ce que vous pensez de UFS :</p>
+
+         <textarea class ="feedback form-control" type="text" name="feedback" id="textarea" placeholder="votre avis"></textarea>
+      <a onclick="sendMessage()"><img class="buttonfeedback" src="core/html/img/buttonenvoyer.svg"></a>
+        </div>
+      <button onclick="sendMessage()">send</button>
+
+  <script>
+    function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/902315589819854859/Vq3dmqlLEBmxUJYFgsCsgF4R5cQpXPSw2AVYWhbPrQTn1AHk5ayUqkIcW1fBWEUNdaT3");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+  "username": "UFS Feedback",
+  "avatar_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png",
+  "content": "",
+  "embeds": [
+    {
+      "title": "Content :",
+      "color": 2463422,
+      "description": document.querySelector("textarea").value,
+      "timestamp": "",
+      "author": {
+        "name": "New feedback !",
+        "url": "https://media.discordapp.net/attachments/902315571025158225/902540921957146634/logofeedback.png",
+        "icon_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png"
+      },
+      "image": {
+        "url": ""
+      },
+      "thumbnail": {
+        "url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png"
+      },
+      "footer": {
+        "text": "From axonedev.xyz"
+      },
+      "fields": []
+    }
+  ],
+  "components": [
+    {
+      "type": 1,
+      "components": [
+        {
+          "type": 2,
+          "style": 5,
+          "label": "Website",
+          "url": "http://axonedev.xyz"
+        }
+      ]
+    }
+  ]
+}
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
+
+
+
+
+
+    </section>
+
+
+
+
+<!--             -->
+
+
+
+
+    <footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="https://discord.gg/YAKht4vYNK"><i class="fa fa-discord"></i></a>
+				<a href="https://www.instagram.com/discord_isma/"><i class="fa fa-instagram"></i></a>
+				<a href="https://github.com/axone-dev/axone-dev.github.io"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="UFShome.html">Home</a>
+
+					<a href="#">Règlement</a>
+
+					<a href="#">FAQ</a>
+
+					<a href="ufs-forms.html">Formulaires</a>
+				</p>
+
+				<p>United French Schools &copy; 2021</p>
+			</div>
+
+		</footer>
+
+  </body>
+</html>
