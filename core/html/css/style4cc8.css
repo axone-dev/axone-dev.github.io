@@ -711,3 +711,7 @@ h1{
     width: 700px;
     height: 100px;
 }
+
+.nofullWidth {
+    width: 69%;
+}
