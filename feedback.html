@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Axone | Home</title>
+
+<!-- EMBED -->
+
+<meta content="Axone | Home" property="og:title" />
+<meta content="Axone is a 1-year-old group of advanced and/or beginners developpers. We've made many projects, and by this time we'll release soon our last project, The Axone's Final Project (AFP)." property="og:description" />
+<meta content="http://axonedev.xyz" property="og:url" />
+<meta property="og:image" content="core/html/img/logo.png" />
+<meta content="couleur en hexa" data-react-helmet="true" name="theme-color" />
+<meta name="twitter:site" content="@discord">
+<meta name="twitter:creator" content="@TheAxonedev">
+
+<!-- EMBED -->
+
+<link type="text/css" rel="stylesheet" href="core/html/css/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="core/html/css/global8e0e.css?v=8"/>
+<link type="text/css" rel="stylesheet" href="core/html/css/font-awesome.min.css"/>
+<link rel="icon" href="favicon.ico">
+
+<script src="core/html/js/jquery-3.1.0.min.js"></script>
+<script src="core/html/js/gibberish-aes-1.0.0.min.js"></script>
+<script src="core/html/js/bootstrap.min.js"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Axone">
+
+<link type="text/css" rel="stylesheet" href="core/html/css/style4cc8.css?v=28"/>		
+
+
+<!-- Search bar code (js)-->
+<script src="core/html/js/particles.min.js"></script>
+		<script>
+			particlesJS.load('particles-js', 'core/html/js/particles.json', function() {
+			  console.log('particles.js loaded - callback');
+			});
+		</script>
+<!-- End -->
+
+		<style>
+			#particles-js{
+			  width: 100%;
+			  height: 100%;
+			  background-image: url('');
+			  background-size: cover;
+			  background-position: 50% 50%;
+			  background-repeat: no-repeat;
+			}
+			canvas {
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: -999
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		<script src="core/func/js/html/navigationd480.js?v=1010"></script>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar" style="box-shadow:0 1px 2px 0 rgba(34,36,38,.15);">
+	<div class="container">
+		<div class="navbar-header">
+												<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+						<a style="margin: 2px 0px 0px;" class="navbar-brand" href="index.html"><img width="50" height="50" src="core/html/img/logo.png"></a>
+		</div>
+
+
+		<!-- navigation zone -->
+
+		<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+				<li><a href="forum.html">Forum</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="creations.html">Creations</a></li>
+				<li><a href="learn.html">Learn</a></li>
+
+				<li style="margin:3px 0px 0px;" class="dropdown">
+					<a style="margin: -2px 0px 0px;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
+
+										<ul class="dropdown-menu" role="menu" style="margin-top:3px;">
+												<li><a href="">Group</a></li>
+												<li><a href="">Discord</a></li>
+					</ul>
+				</li>
+			</ul>
+		<!-- End -->
+
+
+			<div class="navbar-form navbar-left" role="search">
+				<div class="form-group" id="navSearch">
+					<input type="text" id="searchValue" class="form-control" style="display:none" placeholder="Username" autocomplete="off"></input>
+				</div>
+				<a id="switchSearch" style="display:none"><span class="caret"></span></a>
+				<button type="submit" id="searchUser" class="btn btn-default" style="display:none">Search</button>
+			</div>
+
+		<ul class="navbar-side navbarSide">
+					</ul>
+		<div class="overlay"></div>
+</nav>
+
+
+
+<div style="margin-bottom:54px"></div><div class="alert alert-success center" style="padding-top: 7px;padding-bottom: 5px;"><b>Axone v2</b> has been released and is now finished (not really, ya know me)! &nbsp; <a href="https://discord.gg/yVNFwRYBXH" class="btn btn-primary">Discord</a></div>
+<div class="modal globalModal" tabindex="-1" role="dialog" aria-labelledby="modalglobal" aria-hidden="true">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content center gModalContent">
+			<h4 class="modal-title" id="modalUsername"></h4>
+			<div class="modal-body" id="miniProfileContent">
+				<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- release announcement 
+<div class="modal globalModal" tabindex="-1" role="dialog" aria-labelledby="modalglobal" aria-hidden="true">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content center gModalContent">
+			<h4 class="modal-title" id="modalUsername"></h4>
+			<div class="modal-body" id="miniProfileContent">
+				<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+<!-- useless for now 
+
+<div class="modal fade" id="globalModal2" tabindex="-1" role="dialog" aria-labelledby="globalModal" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header" id="gModalHeader">
+				<h5 class="modal-title" id="gModalTitle">Modal</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="gModalErrorContainer"></div>
+			<div class="modal-body" id="gModalBody">
+			</div>
+		</div>
+	</div>
+</div>
+-->
+
+		<div class="container">
+			<div id="particles-js">
+
+				<div class="col-xs-12 col-sm-12 col-md-7">
+					
+					<h3 class="wtext">Your opinion matter</h3>
+					<p class="wtext">Submit your feedback below<div id="rStatus"></div>
+
+					<textarea class="form-control" type="text" id="textarea" placeholder="your feedback here"></textarea>
+
+					<button onclick="sendMessage()" class="btn btn-primary fullWidth cooldown" id="rSubmit">submit</button>
+					<p></p>
+
+  <script>
+    function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/902697459644514335/VsGZnyiqPoY8S_R8YnJUn8lolYQWa9V6Z4shER6-Ym2KRopz6pIDncbEcP_NfpfLCb70");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+  "username": "Axone Feedback",
+  "avatar_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png",
+  "content": "",
+  "embeds": [
+    {
+      "title": "Content :",
+      "color": 2463422,
+      "description": document.querySelector("textarea").value,
+      "timestamp": "",
+      "author": {
+        "name": "New feedback !",
+        "url": "https://media.discordapp.net/attachments/902315571025158225/902540921957146634/logofeedback.png",
+        "icon_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png"
+      },
+      "image": {
+        "url": ""
+      },
+      "thumbnail": {
+        "url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png"
+      },
+      "footer": {
+        "text": "From axonedev.xyz"
+      },
+      "fields": []
+    }
+  ],
+  "components": [
+    {
+      "type": 1,
+      "components": [
+        {
+          "type": 2,
+          "style": 5,
+          "label": "Website",
+          "url": "http://axonedev.xyz"
+        }
+      ]
+    }
+  ]
+}
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
+
+  <script>
+  	$('button.cooldown').click(function(){
+  var btn = $(this);
+  btn.prop('disabled', true);
+  setTimeout(function(){
+    btn.prop('disabled', false);
+  },60000);
+});
+  </script>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<style>
+	@media only screen and (max-width: 500px) {
+		.footer {
+			height:95px
+		}
+	}
+</style>
+<div style="margin-bottom:150px"></div>
+<footer class="footer container center" style="box-shadow:0 1px 50px 0 rgba(34,36,38,.15);">	<h5 style="color:grey;font-size:22px;margin-bottom:0px">Axone</h5>
+	<p style="margin-bottom:0px">All rights belong to Your Local Musk</p>
+	<a onclick="showDMCA();">About Us</a> | <a href="">Feedback</a> | <a href="">Contacts Us</a> | <a href="">Terms</a></footer>	</body>
+</html>
