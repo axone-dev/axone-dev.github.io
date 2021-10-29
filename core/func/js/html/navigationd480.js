@@ -104,7 +104,7 @@ $(document).ready(function() {
 	}, 30000);
 });
 
-function showDMCA() {
-	$(".gModalContent").html('<h2>ABOUT US</h2><p>Hello dear user and welcome to Axone. We are a group of developpers working on ROBLOX projects (mostly). We have made this website to share what we are doing or what we have created. You can ask on our Discord to share your own project/creation. Axone does not permit and will not share malicious project/creation that ruins other users experience. Only "educational" projects/creations are accepted. Meaning that this project/creation will not be used to harm users, games, or other but used for learning and improve development skills. You ARE NOT ALLOWED to steal the content of this website. <br> All rights belong to Your Local Musk and the Axone Team (Your Local Musk, Oxype)<br> </p>');
+function showABOUTUS() {
+	$(".gModalContent").html('<h2>ABOUT US</h2><p>Hello, we are glad to see you here. Welcome to Axone ! <p style="color:grey"> We are a group of developpers working on ROBLOX projects (mostly). We have made this website to share what we are doing or what we have created. You can ask on our Discord to share your own project/creation. Axone does not permit and will not share malicious project/creation that ruins other users experience. Only "educational" projects/creations are accepted. Meaning that this project/creation will not be used to harm users, games, or other but used for learning and improve development skills. You ARE NOT ALLOWED to steal the content of this website. <br> All rights belong to Your Local Musk and the Axone Team (Your Local Musk, Oxype)<p><br> </p>');
 	$('.globalModal').modal({ show: true});
 }
