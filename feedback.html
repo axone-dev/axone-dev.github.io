@@ -190,44 +190,15 @@
 
       request.setRequestHeader('Content-type', 'application/json');
 
-      const params = {
-  "username": "Axone Feedback",
-  "avatar_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png",
-  "content": "",
+      const params = {{
+  "content": null,
   "embeds": [
     {
-      "title": "Content :",
-      "color": 2463422,
-      "description": document.querySelector("textarea").value,
-      "timestamp": "",
-      "author": {
-        "name": "New feedback !",
-        "url": "https://media.discordapp.net/attachments/902315571025158225/902540921957146634/logofeedback.png",
-        "icon_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png"
-      },
-      "image": {
-        "url": ""
-      },
-      "thumbnail": {
-        "url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png"
-      },
+      "title": "FeedBack",
+      "color": 5814783,
       "footer": {
-        "text": "From axonedev.xyz"
-      },
-      "fields": []
-    }
-  ],
-  "components": [
-    {
-      "type": 1,
-      "components": [
-        {
-          "type": 2,
-          "style": 5,
-          "label": "Website",
-          "url": "http://axonedev.xyz"
-        }
-      ]
+        "text": "Feedback from studio-inotarashi.github.io"
+      }
     }
   ]
 }
@@ -241,10 +212,12 @@
   var btn = $(this);
   btn.prop('disabled', true);
   setTimeout(function(){
-    btn.prop('disabled', false);
+    btn.prop('disabled', false); 
   },60000);
 });
   </script>
+
+
 				</div>
 			</div>
 		</div>
